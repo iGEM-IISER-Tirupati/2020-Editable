@@ -1,0 +1,31 @@
+body 
+	{
+		background-image : url('BacteriaBG.jpg');
+		background-repeat : no-repeat;
+		background-attachment : fixed;
+		background-size : cover;
+		color : white;
+		font-family : Calibri;
+	}
+	
+.footer
+	{
+		position : fixed;
+		left : 0;
+		bottom : 0;
+		width : 100%;
+		text-align : right;
+		padding-right : 100px;
+	}
+
+	/*
+.footer a 
+	{
+		color : white;
+	}
+	*/
+	
+a 
+	{
+		text-decoration : none;
+	}
