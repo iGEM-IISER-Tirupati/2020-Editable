@@ -3,47 +3,64 @@
 
 <head>
 
-	<meta charset="utf-8"> <!--SAFETY ELEMENT - JUST ADDS THE UTF-8 CHARACTER SET CONTAINING MOST OF HUMAN LANGUAGES' CHARACTERS -->
-	<meta name="author" content="iGEM IISER Tirupati team">
-	<meta name="description" content="Add appropriate description that includes relevant keywords"> <!--HELPS THE SITE TO HAVE BETTER SEARCH PREFERENCE-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link rel="shortcut icon" href="ColiKaze.ico" type="image/x-icon">
-	<link rel="stylesheet" href="ColiKazeStyleSheet.css">
-	
-	<script src="ColiKazeJS.js" defer></script>
-	
-	<title>iGEM - IISER Tirupati Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="SiteResources/ColiKaze.ico" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <title>iGEM IISER Tirupati Home</title>
 
 </head>
 
 <body>
-	
-	<h1 id="COLIKAZE">COLI KAZE</h1>
-	
-	<p>Links to pages</p>	
-	
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="Blog.html">Blog</a></li>
-		<li><a href="About.html">About</a></li>
-		<li><a href="Contact.html">Contact us</a></li>
-	</ul>
-	
-	<div class="contents">
-	
-		<h4>Blog</h4>
-	
-		<p>This is the blog. Fill in with necessary contents.</p> 
-	
-	</div>
-
-	<div class="footer">
-	
-		<p><a href='https://www.freepik.com/free-photos-vectors/medical'>Image source</a></p>
-	
-	</div>
-	
+    <div class="container">
+        <div class="title-space">
+            <div class="left-side">
+                <div class="brands">
+                    <div class="igem">iGEM</div> <div class="y2020">2020</div>
+                </div>
+                <div class="brands">
+                    <div class="iiser">IISER</div><div class="tirupati">Tirupati</div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="title-logo-links">
+                    <a href="https://igem.org/Main_Page" target="_blank"><img src="SiteResources/iGEM.png"></a>
+                </div>
+                <div class="title-logo-links">
+                    <a href="index.html"><img src="SiteResources/ColiKaze.png"></a>
+                </div>
+                <div class="title-logo-links">
+                    <a href="http://www.iisertirupati.ac.in/" target="_blank"><img src="SiteResources/IISER.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation-bar">
+        <input type="checkbox" id="menu">
+        <label for="menu">
+            <i class="fas fa-angle-left" id="collapse-menu"></i>
+            <i class="fas fa-bars" id="expand-menu"></i>
+        </label>
+        <div class="sidebar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="website-pages">
+          <div class="page-text">
+            <span class="page-heading">BLOG</span>
+            <p>This is the Blog. Fill this page with the necessary contents.. Here's a random picture of a bacteria. We're paparazzi.</p>
+            <img src="SiteResources/blueBacteria.png" alt="Bacteria" width="200px">
+          </div>
+          <div class="page-scroll"></div>
+        </div>
+    </div>
 </body>
 
 </html>

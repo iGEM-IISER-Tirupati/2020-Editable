@@ -1,0 +1,190 @@
+body{
+    margin: 0px;
+    background-color: rgba(30, 30, 30, 1);
+}
+
+.title-space{
+    position: fixed;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: rgba(255,255,255, 1);
+    border-bottom: 2px solid black;
+}
+
+.brands{
+    display: flex;
+}
+
+.brands> div{
+    text-transform: uppercase;
+    font-family: Calibri;
+/*    font-weight: lighter;  */
+    font-size: 28px;
+    height: 34px;
+}
+
+.igem{
+    padding-right: 10px;
+    color: rgb(3, 130, 61);
+}
+
+.y2020{
+  /*  color: rgb(151, 203, 154);  */
+  color: rgba(47, 47, 47, 1);
+}
+
+.iiser{
+    padding-right: 10px;
+    color: rgb(12, 113, 185);
+}
+
+.tirupati{
+  color: rgba(47, 47, 47, 1);
+}
+
+.right-side{
+    display: flex;
+}
+
+.title-space> .right-side> div{
+    margin-left: 20px;
+}
+
+.title-logo-links {
+    top: 0;
+    left: 0;
+    height: 80px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.title-logo-links img{
+    height: 64px;
+}
+
+.title-logo-links:hover{
+    border-bottom: 2px solid rgba(200, 200, 200, 0.5);
+}
+
+.sidebar *{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Calibri;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.sidebar{
+    position: fixed;
+    left: -175px;
+    top: 130px;
+    width: 175px;
+    height: 244px;
+    background: rgb(255, 129, 129, 0.5);
+    transition: all 0.4s ease;
+}
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    color: rgba(255,255,255, 1);
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(47, 47, 47, 1);
+    transition: 0.4s
+}
+
+.sidebar ul li:hover a{
+  padding-left: 10px;
+}
+
+#menu{
+  display: none;
+}
+
+label #expand-menu, label #collapse-menu{
+    position: fixed;
+    cursor: pointer;
+}
+
+label #expand-menu{
+  left: 20px;
+  top: 130px;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 1);
+  transition: 0.4s;
+}
+
+label #collapse-menu{
+  left: -173px;
+  top: 145px;
+  font-size: 25px;
+  color: rgba(255,255,255, 1);
+  background: rgba(255, 129, 129, 0.5);
+  padding: 3px 3px;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+}
+
+#menu:checked ~ .sidebar{
+    left: 0px;
+}
+
+#menu:checked ~ label #expand-menu{
+    left: 175px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#menu:checked ~ label #collapse-menu{
+    left: 175px;
+}
+
+#menu:checked ~ .website-pages{
+    margin-left: 175px;
+}
+
+.website-pages{
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    justify-content: space-between;
+    left: 100px;
+    right: 0;
+    top: 110px;
+    height: 100vh;
+    transition: 0.4s;
+}
+
+.page-heading{
+    font-size: 72px;
+    color: rgb(12, 113, 185);
+    font-family: Calibri;
+    font-weight: lighter;
+}
+
+.website-pages p{
+  width: 85%;
+  font-size: 22px;
+  color: rgba(255,255,255, 1);
+  font-family: Calibri;
+  font-weight: lighter;
+/*  padding: 20px;
+  border-radius: 5px;
+  color: rgba(255,228,181, 0.6);
+  background: rgb(69, 54, 45);  */
+}
+/*
+.page-scroll{
+  width: 100px;
+  background-image: url(SiteResources/BacteriaColumn.png);
+  background-repeat: repeat-y;
+}
+*/
