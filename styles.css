@@ -19,7 +19,7 @@ body{
 
 .brands> div{
     text-transform: uppercase;
-    font-family: Calibri;
+    font-family: Comfortaa;
 /*    font-weight: lighter;  */
     font-size: 28px;
     height: 34px;
@@ -73,7 +73,7 @@ body{
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-    font-family: Calibri;
+    font-family: Comfrotaa;
     font-weight: lighter;
     text-transform: uppercase;
 }
@@ -166,7 +166,7 @@ label #collapse-menu{
 .page-heading{
     font-size: 72px;
     color: rgb(12, 113, 185);
-    font-family: Calibri;
+    font-family: Comfortaa;
     font-weight: lighter;
 }
 
@@ -174,7 +174,7 @@ label #collapse-menu{
   width: 85%;
   font-size: 22px;
   color: rgba(255,255,255, 1);
-  font-family: Calibri;
+  font-family: Comfortaa;
   font-weight: lighter;
 /*  padding: 20px;
   border-radius: 5px;
