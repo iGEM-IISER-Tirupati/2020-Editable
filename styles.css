@@ -1,108 +1,117 @@
 body{
-    margin: 0px;
-    background-color: rgba(30, 30, 30, 1);
+  margin: 0;
+  padding: 0;
+  background: rgba(255,243,224,1);
 }
 
-.title-space{
-    position: fixed;
-    width: 98%;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    background-color: rgba(255,255,255, 1);
-    border-bottom: 2px solid black;
+.wrapper{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Varela', sans-serif;
 }
 
-.brands{
-    display: flex;
+button{
+  font-family: 'Varela', sans-serif;
 }
 
-.brands> div{
-    text-transform: uppercase;
-    font-family: 'Comfortaa', cursive;
-/*    font-weight: lighter;  */
-    font-size: 28px;
-    height: 34px;
+.title-bar{
+  width: 100%;
+  padding-top: 10px;
 }
 
-.igem{
-    padding-right: 10px;
-    color: rgb(3, 130, 61);
+.igemiiser-logo{
+  display: none;
 }
 
-.y2020{
-  /*  color: rgb(151, 203, 154);  */
-  color: rgba(47, 47, 47, 1);
+.page-banner{
+  margin: auto;
+  width: 95%;
+  padding-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(232,210,171);
 }
 
-.iiser{
-    padding-right: 10px;
-    color: rgb(12, 113, 185);
+.bannerbelow-logo{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 10px;
+  width: 95%;
+  margin: auto;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(232,210,171);
 }
 
-.tirupati{
-  color: rgba(47, 47, 47, 1);
+.igemiiser-logomobile img{
+  height: 70px;
+  padding-right: 5px;
 }
 
-.right-side{
-    display: flex;
+.colikaze-logomobile img{
+  height: 70px;
+  padding-left: 5px;
 }
 
-.title-space> .right-side> div{
-    margin-left: 20px;
+.colikaze-logo{
+  display: none;
 }
 
-.title-logo-links {
-    top: 0;
-    left: 0;
-    height: 80px;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.5s;
+.line1{
+  font-size: 22px;
+  line-height: 30px;
 }
 
-.title-logo-links img{
-    height: 64px;
+.line2{
+  font-size: 18px;
+  line-height: 24px;
 }
 
-.title-logo-links:hover{
-    border-bottom: 2px solid rgba(200, 200, 200, 0.5);
+.line3{
+  font-size: 14px;
+  line-height: 30px;
 }
 
-.sidebar *{
+.menu-bar *{
     list-style: none;
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-    font-family: 'Comfortaa', cursive;
     font-weight: lighter;
     text-transform: uppercase;
 }
 
-.sidebar{
-    position: fixed;
-    left: -175px;
-    top: 130px;
-    width: 175px;
-    height: 244px;
-    background: rgb(255, 129, 129, 0.5);
+.menu-bar{
+    position: absolute;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 238, 212, 1);
     transition: all 0.4s ease;
 }
 
-.sidebar ul a{
+.menu-bar ul a{
     display: block;
     height: 100%;
     width: 100%;
     text-align: center;
     line-height: 60px;
-    font-size: 20px;
-    color: rgba(255,255,255, 1);
+    font-size: 14px;
+    color: black;
     box-sizing: border-box;
-    border-bottom: 1px solid rgba(47, 47, 47, 1);
-    transition: 0.4s
+    transition: all 0.4s ease;
 }
 
-.sidebar ul li:hover a{
-  padding-left: 10px;
+.menu-bar ul li:hover a{
+  font-size: 15px;
+  background-color: rgba(235,210,171,1);
 }
 
 #menu{
@@ -115,76 +124,343 @@ label #expand-menu, label #collapse-menu{
 }
 
 label #expand-menu{
-  left: 20px;
-  top: 130px;
-  font-size: 25px;
-  color: rgba(255, 255, 255, 1);
+  left: 0px;
+  top: 0px;
+  font-size: 12px;
+  padding: 11px;
+  color: rgba(1, 1, 1, 1);
   transition: 0.4s;
 }
 
 label #collapse-menu{
-  left: -173px;
-  top: 145px;
-  font-size: 25px;
-  color: rgba(255,255,255, 1);
-  background: rgba(255, 129, 129, 0.5);
-  padding: 3px 3px;
-  border-radius: 4px;
-  transition: all 0.4s ease;
+  right: 40px;
+  top: 0px;
+  font-size: 14px;
+  padding: 10px;
+  color: rgba(1, 1, 1, 1);
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.4s;
 }
 
-#menu:checked ~ .sidebar{
-    left: 0px;
+#menu:checked ~ .menu-bar{
+    opacity: 1;
+    visibility: visible;
 }
 
 #menu:checked ~ label #expand-menu{
-    left: 175px;
+    left: 40px;
     opacity: 0;
     pointer-events: none;
 }
 
 #menu:checked ~ label #collapse-menu{
-    left: 175px;
-}
+    z-index: 2;
+    right: 0px;
+    opacity: 1;
+    pointer-events: all;
 
+}
+/*
 #menu:checked ~ .website-pages{
     margin-left: 175px;
 }
-
-.website-pages{
-    position: absolute;
-    z-index: -1;
-    display: flex;
-    justify-content: space-between;
-    left: 100px;
-    right: 0;
-    top: 123px;
-    height: 100vh;
-    transition: 0.4s;
+*/
+/* Dropdown Button */
+.dropbtn {
+  background-color: rgb(255, 238, 212, 1);
+  border: none;
+  color: black;
+  line-height: 60px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  margin: 0;
+  outline: none;
 }
 
-.page-heading{
-    font-size: 72px;
-    color: rgb(12, 113, 185);
-    font-family: 'Comfortaa', cursive;
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus{
+  font-size: 15px;
+  border: none;
+  background-color: rgba(235,210,171,1);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: block;
+  background-color: rgb(255, 227, 181, 1);
+  transition: all 0.4s ease;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: block;
+  z-index: 1;
+  background-color: rgb(255, 227, 181, 1);
+  width: 100%;
+  transition: 0.4s;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  line-height: 60px;
+  box-sizing: border-box;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  background-color: rgb(255, 227, 181, 1);
+  transition: all 0.4s ease;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color:   rgba(235,210,171,1)
+
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display:block;
+}
+
+@media only screen and (min-width: 768px){
+
+.title-bar{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(232,210,171);
+  margin: auto;
+  height: 30%;
+  width: 95%;
+}
+
+.igemiiser-logo{
+  display: block;
+  width: 20%;
+}
+
+.igemiiser-logo img{
+  padding: 20px;
+  padding-left: 20px;
+  height: 120px;
+}
+
+.colikaze-logo{
+  display: block;
+  width: 20%;
+}
+
+.colikaze-logo img{
+  padding: 20px;
+  padding-right: 20px;
+  height: 120px;
+  float: right;
+}
+
+.page-banner{
+  border-bottom: none;
+  padding-top: 0px;
+  width: 60%;
+  height: auto;
+}
+
+.bannerbelow-logo{
+  display: none;
+}
+
+.line1{
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.line2{
+  font-size: 26px;
+  line-height: 34px;
+}
+
+.line3{
+  font-size: 18px;
+  padding-top: 10px;
+  line-height: 40px;
+}
+
+.menu-bar *{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
     font-weight: lighter;
+    text-transform: uppercase;
 }
 
-.website-pages p{
-  width: 85%;
-  font-size: 22px;
-  color: rgba(255,255,255, 1);
-  font-family: 'Comfortaa', cursive;
-  font-weight: lighter;
-/*  padding: 20px;
-  border-radius: 5px;
-  color: rgba(255,228,181, 0.6);
-  background: rgb(69, 54, 45);  */
+.menu-bar{
+    position: block;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 10%;
+    background: rgb(255, 238, 212, 1);
+    transition: all 0.4s ease;
+}
+
+.menu-bar li{
+  display: inline-block;
+  position: relative;
+}
+
+.menu-bar a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 14px;
+    color: black;
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+}
+
+.menu-bar ul li:hover a{
+  font-size: 15px;
+  background-color: rgba(235,210,171,1);
+}
+
+#menu{
+  display: none;
+}
+
+label #expand-menu, label #collapse-menu{
+    display: none;
+}
+
+label #expand-menu{
+  left: 0px;
+  top: 0px;
+  font-size: 12px;
+  padding: 11px;
+  color: rgba(1, 1, 1, 1);
+  transition: 0.4s;
+}
+
+label #collapse-menu{
+  right: 40px;
+  top: 0px;
+  font-size: 14px;
+  padding: 10px;
+  color: rgba(1, 1, 1, 1);
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+#menu:checked ~ .menu-bar{
+    opacity: 1;
+    visibility: visible;
+}
+
+#menu:checked ~ label #expand-menu{
+    left: 40px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#menu:checked ~ label #collapse-menu{
+    z-index: 2;
+    right: 0px;
+    opacity: 1;
+    pointer-events: all;
+
 }
 /*
-.page-scroll{
-  width: 100px;
-  background-image: url(SiteResources/BacteriaColumn.png);
-  background-repeat: repeat-y;
+#menu:checked ~ .website-pages{
+    margin-left: 175px;
 }
 */
+/* Dropdown Button */
+.dropbtn {
+  position: relative;
+  background-color: rgb(255, 238, 212, 1);
+  border: none;
+  color: black;
+  line-height: 60px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  margin: 0;
+  outline: none;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus{
+  font-size: 15px;
+  border: none;
+  background-color: rgba(235,210,171,1);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: block;
+  background-color: rgb(255, 227, 181, 1);
+  transition: all 0.4s ease;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: rgb(255, 227, 181, 1);
+  width: 100%;
+  transition: 0.4s;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  line-height: 60px;
+  box-sizing: border-box;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  background-color: rgb(255, 227, 181, 1);
+  transition: all 0.4s ease;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color:   rgba(235,210,171,1)
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display:block;
+}
+
+}
