@@ -328,25 +328,25 @@ label #expand-menu, label #collapse-menu{
   display: inline-block;
   position: static;
   float: none;
-  line-height: 30px;
+  line-height: 60px;
 }
 
 .menu-bar a{
   margin: auto;
   min-width: 150px;
   display: inline-block;
-  line-height: 30px;
+  line-height: 60px;
 }
   
 .menu-bar a: hover{
-  line-height: 30px;  
+  line-height: 60px;
 }
 
 /* Dropdown Button */
 .dropbtn {
   position: static;
   margin:auto;
-  line-height: 30px;  
+  line-height: 60px;
   min-width: 150px;
   transition: all 0.4s ease;
 }
@@ -354,7 +354,7 @@ label #expand-menu, label #collapse-menu{
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus{
   font-size: 15px;
-  line-height: 30px;  
+  line-height: 60px;
   border: none;
   background-color: rgba(235,210,171,1);
 }
@@ -381,7 +381,7 @@ label #expand-menu, label #collapse-menu{
 .dropdown-content a {
   position: relative;
   color: black;
-  line-height: 30px;
+  line-height: 60px;
   text-decoration: none;
   display: block;
   width: 100%;
@@ -392,7 +392,7 @@ label #expand-menu, label #collapse-menu{
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color:   rgba(235,210,171,1);
-  line-height: 30px;  
+  line-height: 60px;
 }
 
 .dropdown {
