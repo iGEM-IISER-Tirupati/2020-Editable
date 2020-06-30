@@ -34,10 +34,6 @@ button{
   border-bottom: 1px solid rgba(232,210,171);
 }
 
-.line3{
-  text-transform: uppercase;
-}
-
 .bannerbelow-logo{
   position: relative;
   display: flex;
@@ -76,6 +72,7 @@ button{
 .line3{
   font-size: 14px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .menu-bar *{
@@ -331,6 +328,7 @@ label #expand-menu, label #collapse-menu{
   display: inline-block;
   position: static;
   float: none;
+  line-height: 30px;
 }
 
 .menu-bar a{
@@ -339,12 +337,16 @@ label #expand-menu, label #collapse-menu{
   display: inline-block;
   line-height: 30px;
 }
+  
+.menu-bar a: hover{
+  line-height: 30px;  
+}
 
 /* Dropdown Button */
 .dropbtn {
   position: static;
   margin:auto;
-
+  line-height: 30px;  
   min-width: 150px;
   transition: all 0.4s ease;
 }
@@ -352,6 +354,7 @@ label #expand-menu, label #collapse-menu{
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus{
   font-size: 15px;
+  line-height: 30px;  
   border: none;
   background-color: rgba(235,210,171,1);
 }
@@ -389,7 +392,7 @@ label #expand-menu, label #collapse-menu{
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color:   rgba(235,210,171,1);
-
+  line-height: 30px;  
 }
 
 .dropdown {
