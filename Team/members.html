@@ -1,72 +1,410 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
     <link rel="shortcut icon" href="../SiteResources/iGEM.ico" type="image/x-icon">
+
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>iGEM IISER Trupati Home</title>
+
+    <title>iGEM IISER Trupati Members</title>
+
   </head>
-  <body>
+
+<!-- BODY -->
+
+  <body onresize="wWidth(); wWidth768();">
+
+
     <div class="wrapper">
-      <div class="title-bar">
-        <div class="igemiiser-logo">
-          <img src="../SiteResources/iGEMTirupati.png" alt="iGEM IISER Tirupati">
+
+        <div class="title-bar">
+
+              <div class="igemiiser-logo">
+                <img src="../SiteResources/iGEMTirupati.png" alt="iGEM IISER Tirupati">
+              </div>
+
+              <div class="page-banner">
+                <div class="line1">iGEM IISER Tirupati</div>
+                <div class="line2">2020</div>
+                <div class="line3">uncanny solutions galore</div>
+              </div>
+
+
+              <div class="bannerbelow-logo" id="header-mobile">
+
+                <div class="igemiiser-logomobile">
+                  <img src="../SiteResources/iGEMTirupati.png" alt="iGEM IISER Tirupati">
+                </div>
+
+                <div class="colikaze-logomobile">
+                  <img src="../SiteResources/ColiKaze.png" alt="ColiKaze">
+                </div>
+
+              </div>
+
+
+              <div class="colikaze-logo">
+                <img src="../SiteResources/ColiKaze.png" alt="ColiKaze">
+              </div>
+
         </div>
-        <div class="page-banner">
-          <div class="line1">iGEM IISER TIRUPATI</div>
-          <div class="line2">2020</div>
-          <div class="line3">uncanny solutions galore</div>
-        </div>
-        <div class="bannerbelow-logo">
-          <div class="igemiiser-logomobile">
-            <img src="../SiteResources/iGEMTirupati.png" alt="iGEM IISER Tirupati">
-          </div>
-          <div class="colikaze-logomobile">
-            <img src="../SiteResources/ColiKaze.png" alt="ColiKaze">
-          </div>
-        </div>
-        <div class="colikaze-logo">
-          <img src="../SiteResources/ColiKaze.png" alt="ColiKaze">
-        </div>
-      </div>
+
+    <!--MOBILE-VIEW DROPDOWN CLICKABLE BUTTONS-->
+
       <input type="checkbox" id="menu">
       <label for="menu">
           <i class="fas fa-angle-left" id="collapse-menu"></i>
           <i class="fas fa-bars" id="expand-menu"></i>
       </label>
-      <div class="menu-bar">
-        <ul class="menu-list">
-          <li><a href="../index.html">Home</a></li>
-          <li><div class="dropdown"><button onclick="myFunction('projectDropdown')" class="dropbtn">Project</button><div id="projectDropdown" class="dropdown-content"><a href="../Project/inspiration.html">Inspiration</a><a href="../Project/description.html">Description</a><a href="../Project/wetlab.html">Wetlab</a><a href="../Project/modelling.html">Modelling</a></div></div></li>
-          <li><div class="dropdown"><button onclick="myFunction('teamDropdown')" class="dropbtn">Team</button><div id="teamDropdown" class="dropdown-content"><a href="members.html">Members</a><a href="collaborations.html">Collaboration</a></div></div></li>
-          <li><a href="../support.html">Support Us</a></li>
-          <li><a href="../contact.html">Contact Us</a></li>
-        </ul>
-    </div>
-    <script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction(id) {
-  document.getElementById(id).classList.toggle("show");
-}
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
+    <!--MENU-BAR-->
+
+      <div class="menu-bar" id="header">
+
+        <ul class="menu-list">
+
+              <li><a href="../index.html">Home</a></li>
+              <li>
+                    <div class="dropdown">
+                    <button onclick="myFunction('projectDropdown')" class="dropbtn">Project</button>
+                      <div id="projectDropdown" class="dropdown-content">
+                        <a href="../Project/inspiration.html">Inspiration</a>
+                        <a href="../Project/description.html">Description</a>
+                        <a href="../Project/wetlab.html">Wetlab</a>
+                        <a href="../Project/modelling.html">Modelling</a>
+                      </div>
+                    </div>
+              </li>
+              <li>
+                    <div class="dropdown">
+                    <button onclick="myFunction('teamDropdown')" class="dropbtn">Team</button>
+                      <div id="teamDropdown" class="dropdown-content">
+                        <a href="members.html">Members</a>
+                        <a href="collaborations.html">Collaboration</a>
+                      </div>
+                    </div>
+              </li>
+              <li><a href="../support.html">Support Us</a></li>
+              <li><a href="../contact.html">Contact Us</a></li>
+
+        </ul>
+      </div>
+
+
+</div>  <!--WRAPPER-->
+
+<div class="page-contentMobile" id="page-contentMobile">
+
+            <div class="page-title">
+              <h1>MEMBERS</h1>
+            </div>
+
+            <div class="titlebelow-text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas integer eget aliquet. Consequat interdum varius sit amet mattis vulputate enim nulla. Morbi tristique senectus et netus et malesuada fames. Morbi quis commodo odio aenean sed adipiscing diam donec adipiscing. Sed vulputate mi sit amet mauris commodo quis imperdiet massa. Sed enim ut sem viverra aliquet eget sit. Nunc consequat interdum varius sit amet. Eget mauris pharetra et ultrices neque ornare aenean euismod elementum. Nisi vitae suscipit tellus mauris a diam. Lobortis mattis aliquam faucibus purus in massa tempor nec. Sapien et ligula ullamcorper malesuada proin libero nunc. Mi proin sed libero enim. Sit amet dictum sit amet justo. Laoreet sit amet cursus sit amet dictum sit. Pellentesque habitant morbi tristique senectus et.
+
+                Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt. Ante in nibh mauris cursus mattis molestie. Urna nunc id cursus metus aliquam eleifend mi. Mauris in aliquam sem fringilla ut morbi. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Imperdiet sed euismod nisi porta lorem mollis. Amet porttitor eget dolor morbi non arcu risus. Lectus arcu bibendum at varius. Nunc sed velit dignissim sodales ut eu. Id leo in vitae turpis massa sed elementum tempus egestas. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Amet dictum sit amet justo donec.
+
+                Diam sollicitudin tempor id eu nisl nunc mi. Elementum sagittis vitae et leo duis ut diam quam nulla. Lobortis feugiat vivamus at augue eget. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Nunc congue nisi vitae suscipit tellus. Diam vulputate ut pharetra sit. Felis eget nunc lobortis mattis aliquam faucibus purus in. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Morbi tempus iaculis urna id. Auctor urna nunc id cursus metus aliquam.
+
+                <br><br>
+
+                Tellus mauris a diam maecenas. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Nulla malesuada pellentesque elit eget gravida. Arcu dictum varius duis at consectetur lorem donec massa sapien. Quam pellentesque nec nam aliquam sem et tortor consequat. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Est velit egestas dui id. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Consequat id porta nibh venenatis cras sed felis. Odio morbi quis commodo odio aenean. Commodo odio aenean sed adipiscing diam donec adipiscing. Eget egestas purus viverra accumsan in nisl nisi.
+
+                In mollis nunc sed id semper risus. Cursus turpis massa tincidunt dui ut ornare lectus. Tortor consequat id porta nibh venenatis cras sed. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Amet massa vitae tortor condimentum lacinia. Morbi tristique senectus et netus et. Mattis enim ut tellus elementum. Commodo quis imperdiet massa tincidunt nunc pulvinar. Massa sed elementum tempus egestas. Ac turpis egestas integer eget aliquet nibh praesent tristique magna. Ante in nibh mauris cursus mattis. Ornare lectus sit amet est placerat in egestas erat imperdiet. Eu consequat ac felis donec. Fermentum et sollicitudin ac orci.
+              </p>
+            </div>
+
+            <div class="carousel-container">
+              <i class="fa fa-arrow-left" aria-hidden="true" id='prevBtn'></i>
+              <i class="fa fa-arrow-right" aria-hidden="true" id='nxtBtn'></i>
+
+            <!--PICTURES CAROUSEL-->
+
+                <div class="carousel-slide">
+
+                  <img src="../SiteResources/Photos/yogeshwari.jpg" alt="Yogeshwari" id="lastClone" class="image">
+                  <img src="../SiteResources/Photos/abhinaba.jpg" alt="Abhinaba">
+                  <img src="../SiteResources/Photos/amogh.png" alt="Amogh">
+                  <img src="../SiteResources/Photos/jeno.png" alt="Jeno">
+                  <img src="../SiteResources/Photos/omkar.png" alt="Omkar">
+                  <img src="../SiteResources/Photos/purva.jpg" alt="Purva">
+                  <img src="../SiteResources/Photos/purvaNaik.jpg" alt="PurvaNaik">
+                  <img src="../SiteResources/Photos/raajalakshmi.png" alt="Raajalaksmi">
+                  <img src="../SiteResources/Photos/shubhrika.jpeg" alt="Shubhrika">
+                  <img src="../SiteResources/Photos/sriVidya.jpeg" alt="SriVidya">
+                  <img src="../SiteResources/Photos/tejas.png" alt="Tejas">
+                  <img src="../SiteResources/Photos/uddeshya.png" alt="Uddeshya">
+                  <img src="../SiteResources/Photos/ved.jpeg" alt="Ved">
+                  <img src="../SiteResources/Photos/yogeshwari.jpg" alt="Yogeshwari">
+                  <img src="../SiteResources/Photos/abhinaba.jpg" alt="Abhinaba" id="firstClone">
+
+                </div>
+
+              </div>
+
+              <div class="content-container">
+
+                <div class="content-slide">
+
+                  <div class="yogeshwari" id="lastClone"><p>My primary interest is in plant genetics and paintings. I love nature and am drowned in philosophy and social work. For me, painting is just another way of keeping a dairy and colours are smiling faces inviting to be captured on a canvas.</p></div>
+
+                  <div class="abhinaba"><p>As a student of (applied?) mathematics, I am the diversity hire within the team. As most mathematics students tend to be, I am slightly unhinged in all the right places. I joined this dynamic and interesting group of people solely out of my interest in Game Theory. A nocturnal gaming enthusiast, naturally I was put to work on the wiki.</p></div>
+
+                  <div class="amogh"><p>I wish to explore the secrets of biological phenomenon through an integrated interdisciplinary approach to unravel the nitty-gritties of life. Apart from Biology my interests include fictional novels and books. I am a hardcore otaku. My hobbies include philately, swimming, table tennis, badminton and cricket.</p></div>
+
+                  <div class="jeno"><p>I am the wild card, the last to enter the team. I derive weird excitement from working late into the night and in puns. My work is to make sure the team's motives are conveyed across to the recipients with a decent level of clarity.</p></div>
+
+                  <div class="omkar"><p>I am a strict believer of facts. I love Classical Physics and am motivated to unravel the mysteries of Cancer Biology.</p></div>
+
+                  <div class="purva"><p>Having the best time of my life on a chemistry voyage with biology and data science. I love doing literature surveys and designing experiments. I am a strong believer in the 'Bhagavad Gita'. I love spending time with friends, trekking, swimming, cooking, writing and most importantly sleeping.</p></div>
+
+                  <div class="purva-naik"><p>I love plants and playing football. I run the gels swiftly and steadily,  just like I run marathons. Confusion and plants grow taller in my garden, but I know when to cut them. My interest lies in autoimmune diseases and stem cell therapy.</p></div>
+
+                  <div class="raajalaksmi"><p>I feel that chemistry is a mystery and I love to paint, dance, binge and sleep. I like cooking up a mathematical model as much as cooking in a model kitchen. I believe that nature is full of surprises and hope to quantify a few of them some day.</p></div>
+
+                  <div class="shubhrika"><p>I question, therefore I am (in the field of research)! Currently in the pursuit of gaining insight into Cancer biology. Photography, music and badminton are food for my soul. I am inquisitive, selectively social, a nature lover and constantly yearning for positivity.“Life is a mess, still arrogance!” (ask an Indian for the context)</p></div>
+
+                  <div class="sri-vidya"><p>I am a chemistry enthusiast who likes to decipher chemistry in anything that comes my way. Dancing is my second love. I also enjoy reading novels, playing badminton and early morning walks. I wish to pursue a research career in medicinal chemistry.</p></div>
+
+                  <div class="tejas"><p>I am intrigued by developmental biology. I love to look skyward through a telescope. I am a gastronome, hunt for good food keeps my entropy high. I am also a hardcore gamer and my lone time comprises of watching anime and perusalling manga.</p></div>
+
+                  <div class="uddeshya"><p>I love to explore science through scientific journals in preference to textbooks. I aim to approach scientific discoveries in biology with data science in addition to experimentation and modelling. My "me-time" includes acoustic guitar, non-fiction books and Calisthenics regimes.</p></div>
+
+                  <div class="ved"><p>My abilities lie in the development and analysis of mathematical models to predict the experimental technicalities of the synthetic biology aspects of the project. Apart from this, I enjoy working in the lab along with fellow wetlab members. My hobbies include playing badminton and table tennis. Anime is my go-to stress-buster.</p></div>
+
+                  <div class="yogeshwari"><p>My primary interest is in plant genetics and paintings. I love nature and am drowned in philosophy and social work. For me, painting is just another way of keeping a dairy and colours are smiling faces inviting to be captured on a canvas.</p></div>
+
+                  <div class="abhinaba" id="firstClone"><p>As a student of (applied?) mathematics, I am the diversity hire within the team. As most mathematics students tend to be, I am slightly unhinged in all the right places. I joined this dynamic and interesting group of people solely out of my interest in Game Theory. A nocturnal gaming enthusiast, naturally I was put to work on the wiki.</p></div>
+
+                </div>
+
+              </div>
+
+</div>
+
+<div class="page-content768" id="page-content">
+
+
+            <div class="page-title768">
+              <h1>MEMBERS</h1>
+            </div>
+
+            <div class="titlebelow-text768">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas integer eget aliquet. Consequat interdum varius sit amet mattis vulputate enim nulla. Morbi tristique senectus et netus et malesuada fames. Morbi quis commodo odio aenean sed adipiscing diam donec adipiscing. Sed vulputate mi sit amet mauris commodo quis imperdiet massa. Sed enim ut sem viverra aliquet eget sit. Nunc consequat interdum varius sit amet. Eget mauris pharetra et ultrices neque ornare aenean euismod elementum. Nisi vitae suscipit tellus mauris a diam. Lobortis mattis aliquam faucibus purus in massa tempor nec. Sapien et ligula ullamcorper malesuada proin libero nunc. Mi proin sed libero enim. Sit amet dictum sit amet justo. Laoreet sit amet cursus sit amet dictum sit. Pellentesque habitant morbi tristique senectus et.
+
+                Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt. Ante in nibh mauris cursus mattis molestie. Urna nunc id cursus metus aliquam eleifend mi. Mauris in aliquam sem fringilla ut morbi. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Imperdiet sed euismod nisi porta lorem mollis. Amet porttitor eget dolor morbi non arcu risus. Lectus arcu bibendum at varius. Nunc sed velit dignissim sodales ut eu. Id leo in vitae turpis massa sed elementum tempus egestas. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Amet dictum sit amet justo donec.
+
+                Diam sollicitudin tempor id eu nisl nunc mi. Elementum sagittis vitae et leo duis ut diam quam nulla. Lobortis feugiat vivamus at augue eget. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Nunc congue nisi vitae suscipit tellus. Diam vulputate ut pharetra sit. Felis eget nunc lobortis mattis aliquam faucibus purus in. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Morbi tempus iaculis urna id. Auctor urna nunc id cursus metus aliquam.
+
+                <br><br>
+
+                Tellus mauris a diam maecenas. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Nulla malesuada pellentesque elit eget gravida. Arcu dictum varius duis at consectetur lorem donec massa sapien. Quam pellentesque nec nam aliquam sem et tortor consequat. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Est velit egestas dui id. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Consequat id porta nibh venenatis cras sed felis. Odio morbi quis commodo odio aenean. Commodo odio aenean sed adipiscing diam donec adipiscing. Eget egestas purus viverra accumsan in nisl nisi.
+
+                In mollis nunc sed id semper risus. Cursus turpis massa tincidunt dui ut ornare lectus. Tortor consequat id porta nibh venenatis cras sed. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Amet massa vitae tortor condimentum lacinia. Morbi tristique senectus et netus et. Mattis enim ut tellus elementum. Commodo quis imperdiet massa tincidunt nunc pulvinar. Massa sed elementum tempus egestas. Ac turpis egestas integer eget aliquet nibh praesent tristique magna. Ante in nibh mauris cursus mattis. Ornare lectus sit amet est placerat in egestas erat imperdiet. Eu consequat ac felis donec. Fermentum et sollicitudin ac orci.
+              </p>
+            </div>
+
+            <div class="carousel-container768">
+              <i class="fa fa-arrow-left" aria-hidden="true" id='prevBtnBig'></i>
+              <i class="fa fa-arrow-right" aria-hidden="true" id='nxtBtnBig'></i>
+
+            <!--PICTURES CAROUSEL-->
+              <div class="slide-container768">
+                <div class="carousel-slide768">
+
+                        <div class="member-content size-element" id="lastCloneBig">
+                                <div class="image">
+                                  <img src="../SiteResources/Photos/yogeshwari.jpg" alt="Yogeshwari" id="lastClone">
+                                </div>
+                                <div class="content" id="lastClone">
+                                  <p>My primary interest is in plant genetics and paintings. I love nature and am drowned in philosophy and social work. For me, painting is just another way of keeping a dairy and colours are smiling faces inviting to be captured on a canvas.</p>
+                                </div>
+                        </div>
+
+                        <div class="member-content" id="abhinaba">
+                                <div class="image">
+                                  <img src="../SiteResources/Photos/abhinaba.jpg" alt="Abhinaba">
+                                </div>
+                                <div class="content">
+                                  <p>As a student of (applied?) mathematics, I am the diversity hire within the team. As most mathematics students tend to be, I am slightly unhinged in all the right places. I joined this dynamic and interesting group of people solely out of my interest in Game Theory. A nocturnal gaming enthusiast, naturally I was put to work on the wiki.</p>
+                                </div>
+                        </div>
+
+                        <div class="member-content" id="amogh">
+                                <div class="image">
+                                  <img src="../SiteResources/Photos/amogh.png" alt="Amogh">
+                                </div>
+                                <div class="content">
+                                  <p>I wish to explore the secrets of biological phenomenon through an integrated interdisciplinary approach to unravel the nitty-gritties of life. Apart from Biology my interests include fictional novels and books. I am a hardcore otaku. My hobbies include philately, swimming, table tennis, badminton and cricket.</p>
+                                </div>
+                        </div>
+
+                        <div class="member-content" id="jeno">
+                                <div class="image">
+                                  <img src="../SiteResources/Photos/jeno.png" alt="Jeno">
+                                </div>
+                                <div class="content">
+                                  <p>I am the wild card, the last to enter the team. I derive weird excitement from working late into the night and in puns. My work is to make sure the team's motives are conveyed across to the recipients with a decent level of clarity.</p>
+                                </div>
+                        </div>
+
+                        <div class="member-content" id="omkar">
+                                <div class="image">
+                                  <img src="../SiteResources/Photos/omkar.png" alt="Omkar">
+                                </div>
+                                <div class="content">
+                                  <p>I am a strict believer of facts. I love Classical Physics and am motivated to unravel the mysteries of Cancer Biology.</p>
+                                </div>
+                        </div>
+
+                        <div class="member-content" id="purva">
+                                <div class="image">
+                                  <img src="../SiteResources/Photos/purva.jpg" alt="Purva">
+                                </div>
+                                <div class="content">
+                                  <p>Having the best time of my life on a chemistry voyage with biology and data science. I love doing literature surveys and designing experiments. I am a strong believer in the 'Bhagavad Gita'. I love spending time with friends, trekking, swimming, cooking, writing and most importantly sleeping.</p>
+                                </div>
+                        </div>
+
+                        <div class="member-content" id="purvaNaik">
+                                <div class="image">
+                                  <img src="../SiteResources/Photos/purvaNaik.jpg" alt="PurvaNaik">
+                                </div>
+                                <div class="content">
+                                  <p>I love plants and playing football. I run the gels swiftly and steadily,  just like I run marathons. Confusion and plants grow taller in my garden, but I know when to cut them. My interest lies in autoimmune diseases and stem cell therapy.</p>
+                                </div>
+                        </div>
+
+                        <div class="member-content" id="raajalakshmi">
+                                <div class="image">
+                                  <img src="../SiteResources/Photos/raajalakshmi.png" alt="Raajalaksmi">
+                                </div>
+                                <div class="content">
+                                  <p>I feel that chemistry is a mystery and I love to paint, dance, binge and sleep. I like cooking up a mathematical model as much as cooking in a model kitchen. I believe that nature is full of surprises and hope to quantify a few of them some day.</p>
+                                </div>
+                        </div>
+
+                        <div class="member-content" id="shubhrika">
+                                <div class="image">
+                                  <img src="../SiteResources/Photos/shubhrika.jpeg" alt="Shubhrika">
+                                </div>
+                                <div class="content">
+                                  <p>I question, therefore I am (in the field of research)! Currently in the pursuit of gaining insight into Cancer biology. Photography, music and badminton are food for my soul. I am inquisitive, selectively social, a nature lover and constantly yearning for positivity.“Life is a mess, still arrogance!” (ask an Indian for the context)</p>
+                                </div>
+                        </div>
+
+                        <div class="member-content" id="sriVidya">
+                                <div class="image">
+                                  <img src="../SiteResources/Photos/sriVidya.jpeg" alt="SriVidya">
+                                </div>
+                                <div class="content">
+                                  <p>I am a chemistry enthusiast who likes to decipher chemistry in anything that comes my way. Dancing is my second love. I also enjoy reading novels, playing badminton and early morning walks. I wish to pursue a research career in medicinal chemistry.</p>
+                                </div>
+                        </div>
+
+                        <div class="member-content" id="tejas">
+                                <div class="image">
+                                  <img src="../SiteResources/Photos/tejas.png" alt="Tejas">
+                                </div>
+                                <div class="content">
+                                  <p>I am intrigued by developmental biology. I love to look skyward through a telescope. I am a gastronome, hunt for good food keeps my entropy high. I am also a hardcore gamer and my lone time comprises of watching anime and perusalling manga.</p>
+                                </div>
+                        </div>
+
+                        <div class="member-content" id="uddeshya">
+                                <div class="image">
+                                  <img src="../SiteResources/Photos/uddeshya.png" alt="Uddeshya">
+                                </div>
+                                <div class="content">
+                                  <p>I love to explore science through scientific journals in preference to textbooks. I aim to approach scientific discoveries in biology with data science in addition to experimentation and modelling. My "me-time" includes acoustic guitar, non-fiction books and Calisthenics regimes.</p>
+                                </div>
+                        </div>
+
+                        <div class="member-content" id="ved">
+                                <div class="image">
+                                  <img src="../SiteResources/Photos/ved.jpeg" alt="Ved">
+                                </div>
+                                <div class="content">
+                                  <p>My abilities lie in the development and analysis of mathematical models to predict the experimental technicalities of the synthetic biology aspects of the project. Apart from this, I enjoy working in the lab along with fellow wetlab members. My hobbies include playing badminton and table tennis. Anime is my go-to stress-buster.</p>
+                                </div>
+                        </div>
+
+                        <div class="member-content" id="yogeshwari">
+                                <div class="image">
+                                  <img src="../SiteResources/Photos/yogeshwari.jpg" alt="Yogeshwari">
+                                </div>
+                                <div class="content">
+                                  <p>My primary interest is in plant genetics and paintings. I love nature and am drowned in philosophy and social work. For me, painting is just another way of keeping a dairy and colours are smiling faces inviting to be captured on a canvas.</p>
+                                </div>
+                        </div>
+
+                        <div class="member-content" id="firstCloneBig">
+                                <div class="image">
+                                  <img src="../SiteResources/Photos/abhinaba.jpg" alt="Abhinaba" id="firstClone">
+                                </div>
+                                <div class="content" id="firstClone">
+                                  <p>As a student of (applied?) mathematics, I am the diversity hire within the team. As most mathematics students tend to be, I am slightly unhinged in all the right places. I joined this dynamic and interesting group of people solely out of my interest in Game Theory. A nocturnal gaming enthusiast, naturally I was put to work on the wiki.</p>
+                                </div>
+                        </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+</div>
+
+<div class="footer">
+
+    <div class="institute-logo">
+      <div class="institute-logocontent">
+        <img src="../SiteResources/ColiKaze.png" alt="ColiKaze">
+      </div>
+      <div class="institute-logocontent">
+        <img src="../SiteResources/iGEMTirupati.png" alt="iGEM IISER Tirupati">
+      </div>
+
+    </div>
+
+    <div class="contact">
+      <p class="contact-line1">
+        Contact
+      </p>
+       <p class="contact-line2">
+         Email
+       </p>
+     <a href="mailto:igemiisertirupati2020@gmail.com">igemiisertirupati2020@gmail.com</a>
+        <p class="contact-line2">
+          Phone
+        </p>
+       +91 7776860086 (Tejas Borkar)<br>+91 9790733360 (Jenochristina)
+    </div>
+
+    <div class="sponsor-logo">
+        <img src="../SiteResources/Sponsors/DBT1.png" alt="DBT">
+        <img src="../SiteResources/Sponsors/Doodly1.png" alt="Doodly">
+        <img src="../SiteResources/Sponsors/Geneious.png" alt="Geneious">
+        <img src="../SiteResources/Sponsors/IDT.png" alt="IDT">
+        <img src="../SiteResources/Sponsors/MathWorks.png" alt="MathWorks">
+        <img src="../SiteResources/Sponsors/NEB.jpg" alt="NEB">
+        <img src="../SiteResources/Sponsors/Snapgene.png" alt="Snapgene">
+        <img src="../SiteResources/Sponsors/Takara.png" alt="Takara">
+    </div>
+
+
+</div>
+
+<script src="../script.js" charset="utf-8"></script>
 
   </body>
+
 </html>
