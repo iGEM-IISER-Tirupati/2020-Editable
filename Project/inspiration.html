@@ -1,72 +1,231 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
     <link rel="shortcut icon" href="../SiteResources/iGEM.ico" type="image/x-icon">
+
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>iGEM IISER Trupati Home</title>
+
+    <title>iGEM IISER Trupati Inspiration</title>
+
   </head>
-  <body>
+
+<!-- BODY -->
+
+  <body onresize="wWidth(); wWidth768();">
+
+
     <div class="wrapper">
-      <div class="title-bar">
-        <div class="igemiiser-logo">
-          <img src="../SiteResources/iGEMTirupati.png" alt="iGEM IISER Tirupati">
+
+        <div class="title-bar">
+
+              <div class="igemiiser-logo">
+                <img src="../SiteResources/iGEMTirupati.png" alt="iGEM IISER Tirupati">
+              </div>
+
+              <div class="page-banner">
+                <div class="line1">iGEM IISER Tirupati</div>
+                <div class="line2">2020</div>
+                <div class="line3">uncanny solutions galore</div>
+              </div>
+
+
+              <div class="bannerbelow-logo" id="header-mobile">
+
+                <div class="igemiiser-logomobile">
+                  <img src="../SiteResources/iGEMTirupati.png" alt="iGEM IISER Tirupati">
+                </div>
+
+                <div class="colikaze-logomobile">
+                  <img src="../SiteResources/ColiKaze.png" alt="ColiKaze">
+                </div>
+
+              </div>
+
+
+              <div class="colikaze-logo">
+                <img src="../SiteResources/ColiKaze.png" alt="ColiKaze">
+              </div>
+
         </div>
-        <div class="page-banner">
-          <div class="line1">iGEM IISER TIRUPATI</div>
-          <div class="line2">2020</div>
-          <div class="line3">uncanny solutions galore</div>
-        </div>
-        <div class="bannerbelow-logo">
-          <div class="igemiiser-logomobile">
-            <img src="../SiteResources/iGEMTirupati.png" alt="iGEM IISER Tirupati">
-          </div>
-          <div class="colikaze-logomobile">
-            <img src="../SiteResources/ColiKaze.png" alt="ColiKaze">
-          </div>
-        </div>
-        <div class="colikaze-logo">
-          <img src="../SiteResources/ColiKaze.png" alt="ColiKaze">
-        </div>
-      </div>
+
+    <!--MOBILE-VIEW DROPDOWN CLICKABLE BUTTONS-->
+
       <input type="checkbox" id="menu">
       <label for="menu">
           <i class="fas fa-angle-left" id="collapse-menu"></i>
           <i class="fas fa-bars" id="expand-menu"></i>
       </label>
-      <div class="menu-bar">
-        <ul class="menu-list">
-          <li><a href="../index.html">Home</a></li>
-          <li><div class="dropdown"><button onclick="myFunction('projectDropdown')" class="dropbtn">Project</button><div id="projectDropdown" class="dropdown-content"><a href="inspiration.html">Inspiration</a><a href="description.html">Description</a><a href="wetlab.html">Wetlab</a><a href="modelling.html">Modelling</a></div></div></li>
-          <li><div class="dropdown"><button onclick="myFunction('teamDropdown')" class="dropbtn">Team</button><div id="teamDropdown" class="dropdown-content"><a href="../Team/members.html">Members</a><a href="../Team/collaborations.html">Collaboration</a></div></div></li>
-          <li><a href="../support.html">Support Us</a></li>
-          <li><a href="../contact.html">Contact Us</a></li>
-        </ul>
-    </div>
-    <script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction(id) {
-  document.getElementById(id).classList.toggle("show");
-}
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
+    <!--MENU-BAR-->
+
+      <div class="menu-bar" id="header">
+
+        <ul class="menu-list">
+
+              <li><a href="../index.html">Home</a></li>
+              <li>
+                    <div class="dropdown">
+                    <button onclick="myFunction('projectDropdown')" class="dropbtn">Project</button>
+                      <div id="projectDropdown" class="dropdown-content">
+                        <a href="inspiration.html">Inspiration</a>
+                        <a href="description.html">Description</a>
+                        <a href="wetlab.html">Wetlab</a>
+                        <a href="modelling.html">Modelling</a>
+                      </div>
+                    </div>
+              </li>
+              <li>
+                    <div class="dropdown">
+                    <button onclick="myFunction('teamDropdown')" class="dropbtn">Team</button>
+                      <div id="teamDropdown" class="dropdown-content">
+                        <a href="../Team/members.html">Members</a>
+                        <a href="../Team/collaborations.html">Collaboration</a>
+                      </div>
+                    </div>
+              </li>
+              <li><a href="../support.html">Support Us</a></li>
+              <li><a href="../contact.html">Contact Us</a></li>
+
+        </ul>
+      </div>
+
+
+</div>  <!--WRAPPER-->
+
+<div class="page-contentMobile" id="page-contentMobile">
+
+            <div class="page-title">
+              <h1>INSPIRATION</h1>
+            </div>
+
+            <div class="titlebelow-text">
+              <p>
+
+                We, the members of iGEM IISER Tirupati believe strongly in giving back to our communities and the world as a whole. Thus we tried to brainstorm ideas for iGEM 2020 which, if implemented well, could  potentially be of lasting benefit to the world and people around us. After month(s) of debate and deliberation, we settled on our current project: Coli-Kaze. Read on ahead to find out more.
+                <br>
+                The Issue: Antimicrobial Resistance
+                <br>
+                For decades, multiple varieties of antibiotics have not only been used for therapeutic purposes but practised prophylactically across other industries such as agriculture and animal husbandry. Increased demand for antibiotics across many sectors has allowed for less expensive and off-label uses of drugs. On the contrary, the enormous and irresponsible use of antibiotics has contributed significantly to the advent of multi-drug-resistant strains. Since development of newer antibiotics is slow and unreliable as it depends mainly on modifying the existing antibiotics, Antimicrobial Resistance is one of the biggest health concerns that the world faces today. According to the WHO, AMR related deaths (though not exactly tracked) will overtake cancer deaths by the year 2050.
+                <br>
+                AMR also compounds already existing problems.
+                A recently published study in Lancet looked at 191 hospitalized adult patients in Wuhan,
+                China, that had been diagnosed with COVID-19 and either had died or had been discharged.
+                The researchers found that half of the patients who died also had a secondary infection, and
+                that all but one of them had been treated with antibiotics. Also many of the drugs that are being considered to fight the pandemic are preexisting antimicrobials. The Norwegian Cancer
+                society states that AMR is the biggest hurdle in cancer treatment. Almost all diseases have higher mortality rates due to AMR. So what can be done about this?
+                <br>
+                Our Approach: Coli-Kaze
+                <br>
+                Prevention is undoubtedly better than cure. To prevent AMR, we plan on using the cell lysate of our engineered bacteria to degrade the antibiotics in poultry excreta before they are released into the environment . We plan to show a proof of concept through the degradation of sulphonamides but this can be extended to any antibiotic by simply changing the antibiotic degrading genes involved.
+                <br>
+                The specific objectives to accomplish our goal of combating antimicrobial resistance are:
+                <br>
+                <ul>
+                <li>To clone naturally occurring antibiotic degrading genes downstream to constitutive promoters in E.coli and overexpress the protein. These proteins are released into the excreta upon cell lysis and help degrade the antibiotics in it.</li>
+                <li>To prevent bacterial transformation, conjugation and transduction for additional biosafety, such that our antibiotic degrading genes are not transferred to other organisms.</li>
+                <li>To generate a user modulated tightly regulated ‘kill-switch’ (hence the name) in our bacterial system which degrades DNA such that our bacteria lyses and releases its content out, which would be used to incubate with the poultry excreta. The cell lysate containing antibiotic degrading proteins is expected to reduce the antibiotic concentration in the excreta.</li>
+                <br>
+                To read more about how we achieved these objectives, please visit the <a href="description.html">Description page</a>.
+
+              </p>
+            </div>
+
+</div>
+
+<div class="page-content768" id="page-content">
+
+
+            <div class="page-title768">
+              <h1>INSPIRATION</h1>
+            </div>
+
+            <div class="titlebelow-text768">
+              <p>
+
+                We, the members of iGEM IISER Tirupati believe strongly in giving back to our communities and the world as a whole. Thus we tried to brainstorm ideas for iGEM 2020 which, if implemented well, could  potentially be of lasting benefit to the world and people around us. After month(s) of debate and deliberation, we settled on our current project: Coli-Kaze. Read on ahead to find out more.
+                <br><br>
+                The Issue: Antimicrobial Resistance
+                <br><br>
+                For decades, multiple varieties of antibiotics have not only been used for therapeutic purposes but practised prophylactically across other industries such as agriculture and animal husbandry. Increased demand for antibiotics across many sectors has allowed for less expensive and off-label uses of drugs. On the contrary, the enormous and irresponsible use of antibiotics has contributed significantly to the advent of multi-drug-resistant strains. Since development of newer antibiotics is slow and unreliable as it depends mainly on modifying the existing antibiotics, Antimicrobial Resistance is one of the biggest health concerns that the world faces today. According to the WHO, AMR related deaths (though not exactly tracked) will overtake cancer deaths by the year 2050.
+                <br><br>
+                AMR also compounds already existing problems.
+                A recently published study in Lancet looked at 191 hospitalized adult patients in Wuhan,
+                China, that had been diagnosed with COVID-19 and either had died or had been discharged.
+                The researchers found that half of the patients who died also had a secondary infection, and
+                that all but one of them had been treated with antibiotics. Also many of the drugs that are being considered to fight the pandemic are preexisting antimicrobials. The Norwegian Cancer
+                society states that AMR is the biggest hurdle in cancer treatment. Almost all diseases have higher mortality rates due to AMR. So what can be done about this?
+                <br><br>
+                Our Approach: Coli-Kaze
+                <br><br>
+                Prevention is undoubtedly better than cure. To prevent AMR, we plan on using the cell lysate of our engineered bacteria to degrade the antibiotics in poultry excreta before they are released into the environment . We plan to show a proof of concept through the degradation of sulphonamides but this can be extended to any antibiotic by simply changing the antibiotic degrading genes involved.
+                <br><br>
+                The specific objectives to accomplish our goal of combating antimicrobial resistance are:
+                <br>
+                <ul>
+                <li>To clone naturally occurring antibiotic degrading genes downstream to constitutive promoters in E.coli and overexpress the protein. These proteins are released into the excreta upon cell lysis and help degrade the antibiotics in it.</li>
+                <br>
+                <li>To prevent bacterial transformation, conjugation and transduction for additional biosafety, such that our antibiotic degrading genes are not transferred to other organisms.</li>
+                <br>
+                <li>To generate a user modulated tightly regulated ‘kill-switch’ (hence the name) in our bacterial system which degrades DNA such that our bacteria lyses and releases its content out, which would be used to incubate with the poultry excreta. The cell lysate containing antibiotic degrading proteins is expected to reduce the antibiotic concentration in the excreta.</li>
+                <br>
+                To read more about how we achieved these objectives, visit the <a href="description.html">Description page</a>.
+
+              </p>
+            </div>
+
+
+</div>
+
+
+<div class="footer">
+
+    <div class="institute-logo">
+      <div class="institute-logocontent">
+        <img src="../SiteResources/ColiKaze.png" alt="ColiKaze">
+      </div>
+      <div class="institute-logocontent">
+        <img src="../SiteResources/iGEMTirupati.png" alt="iGEM IISER Tirupati">
+      </div>
+
+    </div>
+
+    <div class="contact">
+      <p class="contact-line1">
+        Contact
+      </p>
+       <p class="contact-line2">
+         Email
+       </p>
+     <a href="mailto:igemiisertirupati2020@gmail.com">igemiisertirupati2020@gmail.com</a>
+        <p class="contact-line2">
+          Phone
+        </p>
+       +91 7776860086 (Tejas Borkar)<br>+91 9790733360 (Jenochristina)
+    </div>
+
+    <div class="sponsor-logo">
+        <img src="../SiteResources/Sponsors/DBT1.png" alt="DBT">
+        <img src="../SiteResources/Sponsors/Doodly1.png" alt="Doodly">
+        <img src="../SiteResources/Sponsors/Geneious.png" alt="Geneious">
+        <img src="../SiteResources/Sponsors/IDT.png" alt="IDT">
+        <img src="../SiteResources/Sponsors/MathWorks.png" alt="MathWorks">
+        <img src="../SiteResources/Sponsors/NEB.jpg" alt="NEB">
+        <img src="../SiteResources/Sponsors/Snapgene.png" alt="Snapgene">
+        <img src="../SiteResources/Sponsors/Takara.png" alt="Takara">
+    </div>
+
+
+</div>
+
+<script src="../script.js" charset="utf-8"></script>
 
   </body>
+
 </html>
