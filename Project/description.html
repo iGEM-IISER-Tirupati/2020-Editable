@@ -1,71 +1,202 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="shortcut icon" href="../SiteResources/iGEM.ico" type="image/x-icon">
+
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>iGEM IISER Trupati Home</title>
+
+    <title>iGEM IISER Trupati Description</title>
+
   </head>
-  <body>
+
+<!-- BODY -->
+
+  <body onresize="wWidth(); wWidth768();">
+
+<div class="full-wrapper">
     <div class="wrapper">
-      <div class="title-bar">
-        <div class="igemiiser-logo">
-          <img src="../SiteResources/iGEMTirupati.png" alt="iGEM IISER Tirupati">
+
+        <div class="title-bar">
+
+              <div class="igemiiser-logo">
+                <img src="../SiteResources/iGEMTirupati.png" alt="iGEM IISER Tirupati">
+              </div>
+
+              <div class="page-banner">
+                <div class="line1">iGEM IISER Tirupati</div>
+                <div class="line2">2020</div>
+                <div class="line3">uncanny solutions galore</div>
+              </div>
+
+
+              <div class="bannerbelow-logo" id="header-mobile">
+
+                <div class="igemiiser-logomobile">
+                  <img src="../SiteResources/iGEMTirupati.png" alt="iGEM IISER Tirupati">
+                </div>
+
+                <div class="colikaze-logomobile">
+                  <img src="../SiteResources/ColiKaze.png" alt="ColiKaze">
+                </div>
+
+              </div>
+
+
+              <div class="colikaze-logo">
+                <img src="../SiteResources/ColiKaze.png" alt="ColiKaze">
+              </div>
+
         </div>
-        <div class="page-banner">
-          <div class="line1">iGEM IISER TIRUPATI</div>
-          <div class="line2">2020</div>
-          <div class="line3">uncanny solutions galore</div>
-        </div>
-        <div class="bannerbelow-logo">
-          <div class="igemiiser-logomobile">
-            <img src="../SiteResources/iGEMTirupati.png" alt="iGEM IISER Tirupati">
-          </div>
-          <div class="colikaze-logomobile">
-            <img src="../SiteResources/ColiKaze.png" alt="ColiKaze">
-          </div>
-        </div>
-        <div class="colikaze-logo">
-          <img src="../SiteResources/ColiKaze.png" alt="ColiKaze">
-        </div>
-      </div>
+
+    <!--MOBILE-VIEW DROPDOWN CLICKABLE BUTTONS-->
+
       <input type="checkbox" id="menu">
       <label for="menu">
           <i class="fas fa-angle-left" id="collapse-menu"></i>
           <i class="fas fa-bars" id="expand-menu"></i>
       </label>
-      <div class="menu-bar">
-        <ul class="menu-list">
-          <li><a href="../index.html">Home</a></li>
-          <li><div class="dropdown"><button onclick="myFunction('projectDropdown')" class="dropbtn">Project</button><div id="projectDropdown" class="dropdown-content"><a href="inspiration.html">Inspiration</a><a href="description.html">Description</a><a href="wetlab.html">Wetlab</a><a href="modelling.html">Modelling</a></div></div></li>
-          <li><div class="dropdown"><button onclick="myFunction('teamDropdown')" class="dropbtn">Team</button><div id="teamDropdown" class="dropdown-content"><a href="../Team/members.html">Members</a><a href="../Team/collaborations.html">Collaboration</a></div></div></li>
-          <li><a href="../support.html">Support Us</a></li>
-          <li><a href="../contact.html">Contact Us</a></li>
-        </ul>
-    </div>
-    <script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction(id) {
-  document.getElementById(id).classList.toggle("show");
-}
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
+    <!--MENU-BAR-->
+
+      <div class="menu-bar" id="header">
+
+        <ul class="menu-list">
+
+              <li><a href="../index.html">Home</a></li>
+              <li>
+                    <div class="dropdown">
+                    <button onclick="myFunction('projectDropdown')" class="dropbtn">Project</button>
+                      <div id="projectDropdown" class="dropdown-content">
+                        <a href="../Project/inspiration.html">Inspiration</a>
+                        <a href="../Project/description.html">Description</a>
+                        <a href="../Project/wetlab.html">Wetlab</a>
+                        <a href="../Project/modelling.html">Modelling</a>
+                      </div>
+                    </div>
+              </li>
+              <li>
+                    <div class="dropdown">
+                    <button onclick="myFunction('teamDropdown')" class="dropbtn">Team</button>
+                      <div id="teamDropdown" class="dropdown-content">
+                        <a href="members.html">Members</a>
+                        <a href="collaborations.html">Collaboration</a>
+                      </div>
+                    </div>
+              </li>
+              <li><a href="../support.html">Support Us</a></li>
+              <li><a href="../contact.html">Contact Us</a></li>
+
+        </ul>
+      </div>
+
+
+</div>  <!--WRAPPER-->
+
+<div class="page-contentMobile" id="page-contentMobile">
+
+            <div class="page-title">
+              <h1>DESCRIPTION</h1>
+            </div>
+
+            <div class="titlebelow-text">
+              <p>
+
+              We at iGEM IISER Tirupati aspire to lessen the burden that is Antimicrobial Resistance. We plan to achieve this by engineering an E. coli, giving it antibiotic degrading capabilities, and releasing said E. coli  on farm excreta so that it can degrade the antibiotic excess in the excreta before it is released to the environment. Thus, instead of curing AMR, we prevent it in the first place. Even though we plan to show a proof of concept through the degradation of sulphonamides, this can be extended to any antibiotic by simply changing the antibiotic degrading genes involved.
+              <br><br>
+              Here’s how we went about achieving our objectives:
+              <br>
+              <ul>
+              <li>First of all, our engineered bacteria needs to be able to degrade excess antimicrobials in the excreta. Thus we clone antibiotic degrading genes present in naturally occurring strains in E.coli and optimise it to express large amounts of these proteins in a short time. Here, we use the sulfonamide degrading genes Sulfonamide mono-oxygenase (sulX) and Flavin reductase (sulR). The bacteria is lysed to release these proteins to the poultry excreta which is expected to degrade the sulfonamides present in it.</li>
+              <br>
+              <li>However, we do not want our engineered bacteria to go about spreading its genes via conjugation/transduction/transformation. Here, we take use of surface exclusion gene (traS) and complement resistant gene (traT) found in F+ E. coli, and clone it into our bacteria to reduce mating pair formation and DNA transfer. These proteins have been added to ensure biosafety in the system, in case not all bacteria undergo cell lysis. If our bacteria escapes into the environment, it will not be able to spread the AMR genes rapidly and will not contribute to AMR.</li>
+              <br>
+              <li>To make sure the engineered bacteria undergoes DNA degradation and cell lysis, we manoeuvred an user modulated tightly regulated ‘kill-switch’ in our bacterial system such that our bacteria undergoes lysis and also degrades its DNA, which would generate the cell lysate containing antibiotic degrading proteins and further prevent the uptake of these antibiotic degrading genes by other organisms and also further mutations are prevented in already resistant strains. The death inducing genes like bpDnaseI will be cloned downstream to arabinose inducible promoter PBAD which is user modulated. The bacteria is expected to die by adding arabinose to the media. The kill-switch concept is also what inspired the name of our project, for those interested.</li>
+
+
+
+              </p>
+            </div>
+
+
+</div>
+
+<div class="page-content768" id="page-content">
+
+
+            <div class="page-title768">
+              <h1>DESCRIPTION</h1>
+            </div>
+
+            <div class="titlebelow-text768">
+              <p>
+
+                We at iGEM IISER Tirupati aspire to lessen the burden that is Antimicrobial Resistance. We plan to achieve this by engineering an E. coli, giving it antibiotic degrading capabilities, and releasing said E. coli  on farm excreta so that it can degrade the antibiotic excess in the excreta before it is released to the environment. Thus, instead of curing AMR, we prevent it in the first place. Even though we plan to show a proof of concept through the degradation of sulphonamides, this can be extended to any antibiotic by simply changing the antibiotic degrading genes involved.
+                <br>
+                Here’s how we went about achieving our objectives:
+                <br>
+                <ul>
+                <li>First of all, our engineered bacteria needs to be able to degrade excess antimicrobials in the excreta. Thus we clone antibiotic degrading genes present in naturally occurring strains in E.coli and optimise it to express large amounts of these proteins in a short time. Here, we use the sulfonamide degrading genes Sulfonamide mono-oxygenase (sulX) and Flavin reductase (sulR). The bacteria is lysed to release these proteins to the poultry excreta which is expected to degrade the sulfonamides present in it.</li>
+                <br>
+                <li>However, we do not want our engineered bacteria to go about spreading its genes via conjugation/transduction/transformation. Here, we take use of surface exclusion gene (traS) and complement resistant gene (traT) found in F+ E. coli, and clone it into our bacteria to reduce mating pair formation and DNA transfer. These proteins have been added to ensure biosafety in the system, in case not all bacteria undergo cell lysis. If our bacteria escapes into the environment, it will not be able to spread the AMR genes rapidly and will not contribute to AMR.</li>
+                <br>
+                <li>To make sure the engineered bacteria undergoes DNA degradation and cell lysis, we manoeuvred an user modulated tightly regulated ‘kill-switch’ in our bacterial system such that our bacteria undergoes lysis and also degrades its DNA, which would generate the cell lysate containing antibiotic degrading proteins and further prevent the uptake of these antibiotic degrading genes by other organisms and also further mutations are prevented in already resistant strains. The death inducing genes like bpDnaseI will be cloned downstream to arabinose inducible promoter PBAD which is user modulated. The bacteria is expected to die by adding arabinose to the media. The kill-switch concept is also what inspired the name of our project, for those interested.</li>
+
+              </p>
+            </div>
+
+
+</div>
+
+<div class="footer">
+
+    <div class="institute-logo">
+      <div class="institute-logocontent">
+        <img src="../SiteResources/ColiKaze.png" alt="ColiKaze">
+      </div>
+      <div class="institute-logocontent">
+        <img src="../SiteResources/iGEMTirupati.png" alt="iGEM IISER Tirupati">
+      </div>
+
+    </div>
+
+    <div class="contact">
+      <p class="contact-line1">
+        Contact
+      </p>
+       <p class="contact-line2">
+         Email
+       </p>
+     <a href="mailto:igemiisertirupati2020@gmail.com">igemiisertirupati2020@gmail.com</a>
+        <p class="contact-line2">
+          Phone
+        </p>
+       +91 7776860086 (Tejas Borkar)<br>+91 9790733360 (Jenochristina)
+    </div>
+
+    <div class="sponsor-logo">
+        <img src="../SiteResources/Sponsors/DBT1.png" alt="DBT">
+        <img src="../SiteResources/Sponsors/Doodly1.png" alt="Doodly">
+        <img src="../SiteResources/Sponsors/Geneious.png" alt="Geneious">
+        <img src="../SiteResources/Sponsors/IDT.png" alt="IDT">
+        <img src="../SiteResources/Sponsors/MathWorks.png" alt="MathWorks">
+        <img src="../SiteResources/Sponsors/NEB.jpg" alt="NEB">
+        <img src="../SiteResources/Sponsors/Snapgene.png" alt="Snapgene">
+        <img src="../SiteResources/Sponsors/Takara.png" alt="Takara">
+    </div>
+
+
+</div>
+
+</div>
+<script src="../script.js" charset="utf-8"></script>
 
   </body>
+
 </html>
