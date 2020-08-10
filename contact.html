@@ -1,72 +1,196 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="SiteResources/iGEM.ico" type="image/x-icon">
+
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>iGEM IISER Trupati Home</title>
+
+    <title>iGEM IISER Trupati Contact Us</title>
+
   </head>
-  <body>
+
+<!-- BODY -->
+
+  <body onresize="wWidth(); wWidth768();">
+
+
     <div class="wrapper">
-      <div class="title-bar">
-        <div class="igemiiser-logo">
-          <img src="SiteResources/iGEMTirupati.png" alt="iGEM IISER Tirupati">
+
+        <div class="title-bar">
+
+              <div class="igemiiser-logo">
+                <img src="SiteResources/iGEMTirupati.png" alt="iGEM IISER Tirupati">
+              </div>
+
+              <div class="page-banner">
+                <div class="line1">iGEM IISER Tirupati</div>
+                <div class="line2">2020</div>
+                <div class="line3">uncanny solutions galore</div>
+              </div>
+
+
+              <div class="bannerbelow-logo" id="header-mobile">
+
+                <div class="igemiiser-logomobile">
+                  <img src="SiteResources/iGEMTirupati.png" alt="iGEM IISER Tirupati">
+                </div>
+
+                <div class="colikaze-logomobile">
+                  <img src="SiteResources/ColiKaze.png" alt="ColiKaze">
+                </div>
+
+              </div>
+
+
+              <div class="colikaze-logo">
+                <img src="SiteResources/ColiKaze.png" alt="ColiKaze">
+              </div>
+
         </div>
-        <div class="page-banner">
-          <div class="line1">iGEM IISER TIRUPATI</div>
-          <div class="line2">2020</div>
-          <div class="line3">uncanny solutions galore</div>
-        </div>
-        <div class="bannerbelow-logo">
-          <div class="igemiiser-logomobile">
-            <img src="SiteResources/iGEMTirupati.png" alt="iGEM IISER Tirupati">
-          </div>
-          <div class="colikaze-logomobile">
-            <img src="SiteResources/ColiKaze.png" alt="ColiKaze">
-          </div>
-        </div>
-        <div class="colikaze-logo">
-          <img src="SiteResources/ColiKaze.png" alt="ColiKaze">
-        </div>
-      </div>
+
+    <!--MOBILE-VIEW DROPDOWN CLICKABLE BUTTONS-->
+
       <input type="checkbox" id="menu">
       <label for="menu">
           <i class="fas fa-angle-left" id="collapse-menu"></i>
           <i class="fas fa-bars" id="expand-menu"></i>
       </label>
-      <div class="menu-bar">
-        <ul class="menu-list">
-          <li><a href="../index.html">Home</a></li>
-          <li><div class="dropdown"><button onclick="myFunction('projectDropdown')" class="dropbtn">Project</button><div id="projectDropdown" class="dropdown-content"><a href="Project/inspiration.html">Inspiration</a><a href="Project/description.html">Description</a><a href="Project/wetlab.html">Wetlab</a><a href="Project/modelling.html">Modelling</a></div></div></li>
-          <li><div class="dropdown"><button onclick="myFunction('teamDropdown')" class="dropbtn">Team</button><div id="teamDropdown" class="dropdown-content"><a href="Team/members.html">Members</a><a href="Team/collaborations.html">Collaboration</a></div></div></li>
-          <li><a href="support.html">Support Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </div>
-    <script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction(id) {
-  document.getElementById(id).classList.toggle("show");
-}
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
+    <!--MENU-BAR-->
+
+      <div class="menu-bar" id="header">
+
+        <ul class="menu-list">
+
+              <li><a href="index.html">Home</a></li>
+              <li>
+                    <div class="dropdown">
+                    <button onclick="myFunction('projectDropdown')" class="dropbtn">Project</button>
+                      <div id="projectDropdown" class="dropdown-content">
+                        <a href="Project/inspiration.html">Inspiration</a>
+                        <a href="Project/description.html">Description</a>
+                        <a href="Project/wetlab.html">Wetlab</a>
+                        <a href="Project/modelling.html">Modelling</a>
+                      </div>
+                    </div>
+              </li>
+              <li>
+                    <div class="dropdown">
+                    <button onclick="myFunction('teamDropdown')" class="dropbtn">Team</button>
+                      <div id="teamDropdown" class="dropdown-content">
+                        <a href="Team/members.html">Members</a>
+                        <a href="Team/collaborations.html">Collaboration</a>
+                      </div>
+                    </div>
+              </li>
+              <li><a href="support.html">Support Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+      </div>
+
+
+</div>  <!--WRAPPER-->
+
+<div class="page-contentMobile" id="page-contentMobile">
+
+            <div class="page-title">
+              <h1>CONTACT US</h1>
+            </div>
+
+            <div class="titlebelow-text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas integer eget aliquet. Consequat interdum varius sit amet mattis vulputate enim nulla. Morbi tristique senectus et netus et malesuada fames. Morbi quis commodo odio aenean sed adipiscing diam donec adipiscing. Sed vulputate mi sit amet mauris commodo quis imperdiet massa. Sed enim ut sem viverra aliquet eget sit. Nunc consequat interdum varius sit amet. Eget mauris pharetra et ultrices neque ornare aenean euismod elementum. Nisi vitae suscipit tellus mauris a diam. Lobortis mattis aliquam faucibus purus in massa tempor nec. Sapien et ligula ullamcorper malesuada proin libero nunc. Mi proin sed libero enim. Sit amet dictum sit amet justo. Laoreet sit amet cursus sit amet dictum sit. Pellentesque habitant morbi tristique senectus et.
+
+                Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt. Ante in nibh mauris cursus mattis molestie. Urna nunc id cursus metus aliquam eleifend mi. Mauris in aliquam sem fringilla ut morbi. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Imperdiet sed euismod nisi porta lorem mollis. Amet porttitor eget dolor morbi non arcu risus. Lectus arcu bibendum at varius. Nunc sed velit dignissim sodales ut eu. Id leo in vitae turpis massa sed elementum tempus egestas. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Amet dictum sit amet justo donec.
+
+                Diam sollicitudin tempor id eu nisl nunc mi. Elementum sagittis vitae et leo duis ut diam quam nulla. Lobortis feugiat vivamus at augue eget. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Nunc congue nisi vitae suscipit tellus. Diam vulputate ut pharetra sit. Felis eget nunc lobortis mattis aliquam faucibus purus in. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Morbi tempus iaculis urna id. Auctor urna nunc id cursus metus aliquam.
+
+                <br><br>
+
+                Tellus mauris a diam maecenas. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Nulla malesuada pellentesque elit eget gravida. Arcu dictum varius duis at consectetur lorem donec massa sapien. Quam pellentesque nec nam aliquam sem et tortor consequat. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Est velit egestas dui id. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Consequat id porta nibh venenatis cras sed felis. Odio morbi quis commodo odio aenean. Commodo odio aenean sed adipiscing diam donec adipiscing. Eget egestas purus viverra accumsan in nisl nisi.
+
+                In mollis nunc sed id semper risus. Cursus turpis massa tincidunt dui ut ornare lectus. Tortor consequat id porta nibh venenatis cras sed. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Amet massa vitae tortor condimentum lacinia. Morbi tristique senectus et netus et. Mattis enim ut tellus elementum. Commodo quis imperdiet massa tincidunt nunc pulvinar. Massa sed elementum tempus egestas. Ac turpis egestas integer eget aliquet nibh praesent tristique magna. Ante in nibh mauris cursus mattis. Ornare lectus sit amet est placerat in egestas erat imperdiet. Eu consequat ac felis donec. Fermentum et sollicitudin ac orci.
+              </p>
+            </div>
+
+
+</div>
+
+<div class="page-content768" id="page-content">
+
+
+            <div class="page-title768">
+              <h1>CONTACT US</h1>
+            </div>
+
+            <div class="titlebelow-text768">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas integer eget aliquet. Consequat interdum varius sit amet mattis vulputate enim nulla. Morbi tristique senectus et netus et malesuada fames. Morbi quis commodo odio aenean sed adipiscing diam donec adipiscing. Sed vulputate mi sit amet mauris commodo quis imperdiet massa. Sed enim ut sem viverra aliquet eget sit. Nunc consequat interdum varius sit amet. Eget mauris pharetra et ultrices neque ornare aenean euismod elementum. Nisi vitae suscipit tellus mauris a diam. Lobortis mattis aliquam faucibus purus in massa tempor nec. Sapien et ligula ullamcorper malesuada proin libero nunc. Mi proin sed libero enim. Sit amet dictum sit amet justo. Laoreet sit amet cursus sit amet dictum sit. Pellentesque habitant morbi tristique senectus et.
+
+                Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt. Ante in nibh mauris cursus mattis molestie. Urna nunc id cursus metus aliquam eleifend mi. Mauris in aliquam sem fringilla ut morbi. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Imperdiet sed euismod nisi porta lorem mollis. Amet porttitor eget dolor morbi non arcu risus. Lectus arcu bibendum at varius. Nunc sed velit dignissim sodales ut eu. Id leo in vitae turpis massa sed elementum tempus egestas. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Amet dictum sit amet justo donec.
+
+                Diam sollicitudin tempor id eu nisl nunc mi. Elementum sagittis vitae et leo duis ut diam quam nulla. Lobortis feugiat vivamus at augue eget. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Nunc congue nisi vitae suscipit tellus. Diam vulputate ut pharetra sit. Felis eget nunc lobortis mattis aliquam faucibus purus in. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Morbi tempus iaculis urna id. Auctor urna nunc id cursus metus aliquam.
+
+                <br><br>
+
+                Tellus mauris a diam maecenas. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Nulla malesuada pellentesque elit eget gravida. Arcu dictum varius duis at consectetur lorem donec massa sapien. Quam pellentesque nec nam aliquam sem et tortor consequat. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Est velit egestas dui id. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Consequat id porta nibh venenatis cras sed felis. Odio morbi quis commodo odio aenean. Commodo odio aenean sed adipiscing diam donec adipiscing. Eget egestas purus viverra accumsan in nisl nisi.
+
+                In mollis nunc sed id semper risus. Cursus turpis massa tincidunt dui ut ornare lectus. Tortor consequat id porta nibh venenatis cras sed. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Amet massa vitae tortor condimentum lacinia. Morbi tristique senectus et netus et. Mattis enim ut tellus elementum. Commodo quis imperdiet massa tincidunt nunc pulvinar. Massa sed elementum tempus egestas. Ac turpis egestas integer eget aliquet nibh praesent tristique magna. Ante in nibh mauris cursus mattis. Ornare lectus sit amet est placerat in egestas erat imperdiet. Eu consequat ac felis donec. Fermentum et sollicitudin ac orci.
+              </p>
+            </div>
+
+        </div>
+
+<div class="footer">
+
+    <div class="institute-logo">
+      <div class="institute-logocontent">
+        <img src="SiteResources/ColiKaze.png" alt="ColiKaze">
+      </div>
+      <div class="institute-logocontent">
+        <img src="SiteResources/iGEMTirupati.png" alt="iGEM IISER Tirupati">
+      </div>
+
+    </div>
+
+    <div class="contact">
+      <p class="contact-line1">
+        Contact
+      </p>
+       <p class="contact-line2">
+         Email
+       </p>
+     <a href="mailto:igemiisertirupati2020@gmail.com">igemiisertirupati2020@gmail.com</a>
+        <p class="contact-line2">
+          Phone
+        </p>
+       +91 7776860086 (Tejas Borkar)<br>+91 9790733360 (Jenochristina)
+    </div>
+
+    <div class="sponsor-logo">
+        <img src="SiteResources/Sponsors/DBT1.png" alt="DBT">
+        <img src="SiteResources/Sponsors/Doodly1.png" alt="Doodly">
+        <img src="SiteResources/Sponsors/Geneious.png" alt="Geneious">
+        <img src="SiteResources/Sponsors/IDT.png" alt="IDT">
+        <img src="SiteResources/Sponsors/MathWorks.png" alt="MathWorks">
+        <img src="SiteResources/Sponsors/NEB.jpg" alt="NEB">
+        <img src="SiteResources/Sponsors/Snapgene.png" alt="Snapgene">
+        <img src="SiteResources/Sponsors/Takara.png" alt="Takara">
+    </div>
+
+
+</div>
+
+<script src="script.js" charset="utf-8"></script>
 
   </body>
+
 </html>
