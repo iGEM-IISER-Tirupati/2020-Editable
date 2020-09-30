@@ -1,8 +1,8 @@
-Country,Value
-AMR,7000
-Cancer,82000
-Cholera,1000
-Diabetes,15000
-Diarrhoeal-disease,14000
-Measles,1300
-Road-traffic-accidents,12000
+Country,Value,id
+AMR,7000,1
+Cancer,82000,2
+Cholera,1000,3
+Diabetes,15000,4
+Diarrhoeal-disease,14000,5
+Measles,1300,6
+Road-traffic-accidents,12000,7
